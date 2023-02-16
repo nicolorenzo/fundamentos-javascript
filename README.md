@@ -23,15 +23,11 @@ function showTicket(user: string, ticket :number) {
 
 Para a função acima declaramos que o parâmeto `user` será um dado do tipo `string`, enquanto `ticket` será `number`.
 
-## Tipos da dado
-
-Agora que já entendemos a importância do TypeScript e da tipagem explícita, veremos os tipos de dados.
-
-### Any
+## Any
 
 A utilização do `any` não é muito indicada pois aceita qualquer tipo, indo contra a proposta do TypesScript de definir os dados com precisão.
 
-### Tipos Primitivos
+## Tipos Primitivos
 
 Tipos primitivo são os tipos de dados básicos disponíveis em Javascript:
 
@@ -49,7 +45,7 @@ let price: number;
 price = 10;
 ```
 
-### Matrizes
+## Matrizes
 
 Matrizes são arrays, vetores, ou simplesmente listas que devem ser declaradas de forma específica a depender do tipo de dado.
 
@@ -77,7 +73,7 @@ let users: Array<string>;
 users = ['Nico', 'Lorenzo'];
 ```
 
-### Funções
+## Funções
 
 Quando um função não tem retorno, ela será do tipo `void`, que mesmo não declarado, será definido implicitamente:
 
@@ -95,4 +91,16 @@ Já no caso em há retorno da função, basta defini-lo como qualquer dado, por 
 function showMessage(message: string): string {
   return message;
 }
+```
+
+## Union
+
+Este operador possibilita utilizar mais um tipo através do caractere `|`:
+
+```
+function printUserId(id: number | sting ) {
+  console.log(`O ID do usuário é: ${id})
+}
+
+printUserId('1'); // Ou printUserID(1)
 ```
