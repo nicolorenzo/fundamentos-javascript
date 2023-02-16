@@ -48,3 +48,31 @@ email = 'nicolorenzo@live.com';
 let price: number;
 price = 10;
 ```
+
+### Matrizes
+
+Matrizes são arrays, vetores, ou simplesmente listas de dados que devem ser declarados de forma específica.
+
+Por exemplo, um array de números:
+
+```
+let numbers: number[];
+numbers = [1,2,3,4];
+
+// Também é possível declarar da seguinte forma:
+
+let users: Array<number>;
+numbers = [1,2,3,4];
+```
+
+Seguindo a mesma lógica, declaramos uma lista de strings da seguinte forma:
+
+```
+let users: string[];
+users = ['Nico', 'Lorenzo'];
+
+// Ou:
+
+let users: Array<string>;
+users = ['Nico', 'Lorenzo'];
+```
