@@ -30,3 +30,21 @@ Agora que já entendemos a importância do TypeScript e da tipagem explícita, v
 ### Any
 
 A utilização do `any` não é muito indicada pois aceita qualquer tipo, indo contra a proposta do TypesScript de definir os dados com precisão.
+
+### Tipos Primitivos
+
+Tipos primitivo são os tipos de dados básicos disponíveis em Javascript:
+
+```
+// Boolean
+let loading: boolean;
+loading = false;
+
+// String
+let email: sting;
+email = 'nicolorenzo@live.com';
+
+//Number
+let price: number;
+price = 10;
+```
