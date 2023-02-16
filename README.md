@@ -104,3 +104,58 @@ function printUserId(id: number | sting ) {
 
 printUserId('1'); // Ou printUserID(1)
 ```
+
+## Generic
+
+Generic é outra forma de flexibilizar a tipagem, através da sintaxe `<T>`, onde `T` pode ser qualquer caractere, mas se convencionou usar `T` para representar "type":
+
+```
+function usestate<T>() {
+  let stare: T;
+
+  function get() {
+    return state;
+  }
+
+  function set(newValue: T) {
+    state = newValue;
+  }
+
+  return {get, set};
+}
+
+let newState = useState<string>();
+newState.set('Nico');
+```
+
+Perceba que com generic, eu só defini o tipo no momento de declarar a função.
+
+Agora, em combinação com o union, é possível fexibilizar um pouco mais:
+
+```
+function usestate<T extends number | string>() {
+  let stare: T;
+
+  function get() {
+    return state;
+  }
+
+  function set(newValue: T) {
+    state = newValue;
+  }
+
+  return {get, set};
+}
+```
+
+A diferença de usar apenas union, é que dessa forma eu ainda só posso utilizar apenas o tipo que for definido no momento da declaração da função:
+
+```
+let newState = useState<string>();
+newState.set('Nico');
+
+// Ou
+
+let newState = useState<number>();
+newState.set(1234);
+```
