@@ -76,3 +76,23 @@ users = ['Nico', 'Lorenzo'];
 let users: Array<string>;
 users = ['Nico', 'Lorenzo'];
 ```
+
+### Funções
+
+Quando um função não tem retorno, ela será do tipo `void`, que mesmo não declarado, será definido implicitamente:
+
+```
+function showMessage(message: string): void {
+  console.log(message)
+}
+```
+
+Além disso, é possível reparar que também devemos definir o tipo de dado dos parâmetros de uma função.
+
+Já no caso em há retorno da função, basta defini-lo como qualquer dado, por exemplo, se o retorno for uma string:
+
+```
+function showMessage(message: string): string {
+  return message;
+}
+```
