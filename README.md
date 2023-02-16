@@ -22,3 +22,7 @@ function showTicket(user: string, ticket :number) {
 ```
 
 Para a função acima declaramos que o parâmeto `user` será um dado do tipo `string`, enquanto `ticket` será `number`.
+
+## Tipos da dado
+
+Agora que já entendemos a importância do TypeScript e da tipagem explícita, veremos os tipos de dados.
