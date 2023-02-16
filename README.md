@@ -26,3 +26,7 @@ Para a função acima declaramos que o parâmeto `user` será um dado do tipo `s
 ## Tipos da dado
 
 Agora que já entendemos a importância do TypeScript e da tipagem explícita, veremos os tipos de dados.
+
+### Any
+
+A utilização do `any` não é muito indicada pois aceita qualquer tipo, indo contra a proposta do TypesScript de definir os dados com precisão.
