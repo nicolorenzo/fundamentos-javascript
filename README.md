@@ -51,7 +51,7 @@ price = 10;
 
 ### Matrizes
 
-Matrizes são arrays, vetores, ou simplesmente listas de dados que devem ser declarados de forma específica.
+Matrizes são arrays, vetores, ou simplesmente listas que devem ser declaradas de forma específica a depender do tipo de dado.
 
 Por exemplo, um array de números:
 
