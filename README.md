@@ -10,3 +10,15 @@ console.log(sum(1,'2')); // output: 12
 ```
 
 Como o Javascript é uma linguagem fracamente tipada, ele não sabe que gostaríamos que essa função de soma recebesse apenas valores numéricos e não retorna um erro quando passamos uma string como parâmetro, apenas concatena os valores.
+
+## Tipagem explícita
+
+Tipagem explícita significa que devemos declarar de forma clara nossos tipos de dados, como por exeplo os parâmetros de uma função
+
+```
+function showTicket(user: string, ticket :number) {
+  console.log(`Olá ${user}. O número do seu ticket é ${ticket}`)
+}
+```
+
+Para a função acima declaramos que o parâmeto `user` será um dado do tipo `string`, enquanto `ticket` será `number`.
