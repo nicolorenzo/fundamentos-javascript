@@ -254,7 +254,7 @@ Como mostra o exeplo, agora as propriedades dos tipos `User` e `Char` estão uni
 
 ## Interface
 
-Similar ao `type`, essa é outra forma de declarar tipos, apesar de servir ao mesmo propósito, porém sua aplicação lembra o uso de classes, então pode ser mais adequada ao paradigma de orientação a objetos:
+Similar ao `type`, essa é outra forma de declarar tipos, porém apesar de servir ao mesmo propósito, sua aplicação lembra o uso de classes, então pode ser mais adequada ao paradigma de orientação a objetos:
 
 ```
 interface User {
