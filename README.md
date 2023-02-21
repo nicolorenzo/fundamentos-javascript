@@ -209,7 +209,7 @@ Dessa forma, nesse exemplo quando difinimos o tipo `Point` para o objeto que ter
 
 ## Opcional
 
-Em alguns casos, pode não ser estritamente necessário tipar alguma propriedade de algum objeto. Para isso, basta adicionar o caractere `?`:
+Em alguns casos, pode não ser estritamente necessário declarar alguma propriedade de algum objeto. Para isso, basta adicionar o caractere `?`:
 
 ```
 type User = {
@@ -224,3 +224,5 @@ let newUser: User = {
     age: 18
 }
 ```
+
+## Intersecção de Tipos
