@@ -226,3 +226,28 @@ let newUser: User = {
 ```
 
 ## Intersecção de Tipos
+
+Utilizamos esse recurso quando é necessário atribuir as propriedades de mais de um objeto a novo tipo:
+
+```
+type User = {
+    id: number,
+    name: string,
+}
+
+type Char = {
+    nickname: string,
+    level: number
+}
+
+type PlayerInfo = User & Char;
+
+let info: PlayerInfo = {
+    id: 1,
+    name: 'João Inácio',
+    nickname: 'birobirobiro',
+    level: 50
+}
+```
+
+Como mostra o exeplo, agora as propriedades dos tipos `User` e `Char` estão unidos através do caractere `&` e atribuídos ao tipo `PlayerInfo`.
