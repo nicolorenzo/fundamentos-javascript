@@ -159,3 +159,14 @@ newState.set('Nico');
 let newState = useState<number>();
 newState.set(1234);
 ```
+
+## Type
+
+`type` é uma forma de reutilizar a declaração de múltiplos tipos:
+
+```
+type IdType =  string | number | undefined;
+let userId: IdType;
+
+userID = '1'; // || 1 || undefined
+```
