@@ -170,3 +170,19 @@ let userId: IdType;
 
 userID = '1'; // || 1 || undefined
 ```
+
+## Type Assertion
+
+Esse é um recurso muito utilizado quando recebemos um objeto de uma API, por exemplo, cujo TypeScript não conhece a tipagem, então criamos um `type` definindo os tipos deste objeto:
+
+```
+type UserResponse = {
+    id: number;
+    name: string;
+    avatar: string;
+}
+
+let userResponse = {} as UserResponse;
+```
+
+Perceba que através de `as` definimos que o objeto `userResponse` será do tipo `UserResponse`.
