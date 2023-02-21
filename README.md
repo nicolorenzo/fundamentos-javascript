@@ -186,3 +186,23 @@ let userResponse = {} as UserResponse;
 ```
 
 Perceba que através de `as` definimos que o objeto `userResponse` será do tipo `UserResponse`.
+
+## Objetos
+
+Como já deve ter ficado claro no exeplo acima, é possível utilizar `type` para declarar objetos:
+
+```
+type Point = {
+    x: number;
+    y: number;
+}
+
+function printCoord(points: Point) {
+    console.log(`O eixo x é: ${points.x}`)
+    console.log(`O eixo y é: ${points.y}`)
+}
+
+printCoord({x: 101, y: 50})
+```
+
+Dessa forma, nesse exemplo quando difinimos o tipo `Point` para o objeto que terá nossas coordenadas `x` e `y`, essas estão acessíveis dentro da função quando utilizamos o parâmetro `points`, já que ele é do tipo `Point`.
