@@ -206,3 +206,21 @@ printCoord({x: 101, y: 50})
 ```
 
 Dessa forma, nesse exemplo quando difinimos o tipo `Point` para o objeto que terá nossas coordenadas `x` e `y`, essas estão acessíveis dentro da função quando utilizamos o parâmetro `points`, já que ele é do tipo `Point`.
+
+## Opcional
+
+Em alguns casos, pode não ser estritamente necessário tipar alguma propriedade de algum objeto. Para isso, basta adicionar o caractere `?`:
+
+```
+type User = {
+    name: string;
+    email: string;
+    age: number;
+    isAdmin?: boolean; // A declaração dessa propriedade agora é opcional
+
+let newUser: User = {
+    name: 'João',
+    email: 'joao@email.com',
+    age: 18
+}
+```
