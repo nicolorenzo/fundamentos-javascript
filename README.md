@@ -11,6 +11,8 @@ console.log(sum(1,'2')); // output: 12
 
 Como o Javascript é uma linguagem fracamente tipada, ele não sabe que gostaríamos que essa função de soma recebesse apenas valores numéricos e não retorna um erro quando passamos uma string como parâmetro, apenas concatena os valores.
 
+Você pode checar o projeto [Fundamentos do React com ViteJS](https://github.com/nicolorenzo/fundamentos-react) onde eu aplico TypeScript.
+
 ## Tipagem explícita
 
 Tipagem explícita significa que devemos declarar de forma clara nossos tipos de dados, como por exeplo os parâmetros de uma função
